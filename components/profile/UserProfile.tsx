@@ -7,6 +7,8 @@ type UserProfileProps = {
   user: User;
 };
 
+// Main user profile that shows on landing page
+
 export function UserProfile({ user }: UserProfileProps) {
   return (
     <section className="flex flex-col items-center justify-centerw-full fixed top-0 inset-x-0 bg-background">

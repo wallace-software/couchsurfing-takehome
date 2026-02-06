@@ -5,6 +5,8 @@ type FriendProfileProps = {
   friend: Friend | null;
 };
 
+// Profile info shown for friends on post details page
+
 export function FriendProfile({ friend }: FriendProfileProps) {
   return (
     <section className="flex flex-col gap-3 w-full ">

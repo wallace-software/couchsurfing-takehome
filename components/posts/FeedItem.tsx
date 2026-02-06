@@ -5,6 +5,9 @@ import Link from "next/link";
 type FeedItemProps = {
   post: Post;
 };
+
+// Clickable feed items that open a detailed view of post and poster
+
 export async function FeedItem({ post }: FeedItemProps) {
   return (
     <Link
