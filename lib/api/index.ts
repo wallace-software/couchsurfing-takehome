@@ -19,7 +19,7 @@ export async function getFriends(): Promise<Friend[]> {
 }
 
 export async function getPosts(): Promise<Post[]> {
-  await delay(NETWORK_DALAY_MS);
+  await delay(NETWORK_DALAY_MS * 4); //TODO: change to 8
   return structuredClone(posts);
 }
 
