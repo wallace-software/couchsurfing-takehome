@@ -22,8 +22,8 @@ export function UserProfile({ user }: UserProfileProps) {
       <p className="text-lg text-white/70">{user.bio}</p>
 
       <div className="flex gap-2">
-        {user.travelStatus && <Badge> {user.travelStatus}</Badge>}
-        {user.location && <Badge variant="secondary"> {user.location}</Badge>}
+        {user?.travelStatus && <Badge> {user.travelStatus}</Badge>}
+        {user?.location && <Badge variant="secondary"> {user.location}</Badge>}
       </div>
     </section>
   );
