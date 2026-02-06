@@ -14,7 +14,7 @@ export async function getUser(): Promise<User> {
 }
 
 export async function getPosts(): Promise<Post[]> {
-  await delay(NETWORK_DELAY_MS * 6);
+  await delay(NETWORK_DELAY_MS * 4);
   return structuredClone(posts);
 }
 
